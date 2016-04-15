@@ -27,6 +27,11 @@ public class ShopFragment extends BaseFragment {
 
     @Override
     protected void initView(View view) {
+        initToolbar(view);
+    }
+    private void initToolbar(View view){
+        shopToolbar = findView(R.id.shopToolbar, view);
+        shopToolbar.setTitle("首页");
 
     }
 

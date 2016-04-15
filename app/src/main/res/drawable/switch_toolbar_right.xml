@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/baike_btn_pink_right_f_96" android:state_selected="true"></item>
+    <item android:drawable="@mipmap/baike_btn_trans_right_f_96"></item>
+</selector>

@@ -1,13 +1,14 @@
 package com.botou.hx.marketclient.activity;
 
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.TabHost;
 
 import com.botou.hx.marketclient.R;
+import com.botou.hx.marketclient.fragment.MeFragment;
 import com.botou.hx.marketclient.fragment.ShopFragment;
+import com.botou.hx.marketclient.fragment.WorkFragment;
 
 public class MainActivity extends AbsBaseActivity{
     private TabHost tabHost;
@@ -46,9 +47,9 @@ public class MainActivity extends AbsBaseActivity{
     private void initFragment(){
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.tabShop, new ShopFragment());
-        ft.replace(R.id.tabWork, new Fragment());
-        ft.replace(R.id.tabCard, new Fragment());
-        ft.replace(R.id.tabMe, new Fragment() );
+        ft.replace(R.id.tabWork, new WorkFragment());
+        ft.replace(R.id.tabCard, new WorkFragment());
+        ft.replace(R.id.tabMe, new MeFragment() );
         ft.commit();
     }
 }

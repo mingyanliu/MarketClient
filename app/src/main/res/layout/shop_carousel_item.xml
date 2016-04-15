@@ -45,7 +45,7 @@
             android:gravity="center"
             android:text="特价" />
 
-        <TextViewView
+        <TextView
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="7dp"
